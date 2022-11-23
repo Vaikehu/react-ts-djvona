@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { getDataFromFirebase } from './database/getDataFromFirebase';
 import './style.css';
+import Slider from './components/Slider.tsx';
 
 export default function App() {
   React.useEffect(() => {
