@@ -4,13 +4,7 @@ import './style.css';
 import Slider from './components/Slider.tsx';
 
 export default function App() {
-  React.useEffect(() => {
-    (async () => {
-      const response = await getDataFromFirebase('header-carrousel');
-
-      console.log(response)
-    })();
-  }, []);
+  
   return (
     <div>
       <Slider/>

@@ -13,8 +13,19 @@ import '../src/styles.css';
 
 // import required modules
 import { EffectFade, Navigation, Pagination } from 'swiper';
+import { getDataFromFirebase } from '../database/getDataFromFirebase';
 
 export default function App() {
+  const [data, setData] = React.useState([]);
+  React.useEffect(() => {
+    (async () => {
+      const response = await getDataFromFirebase('header-carrousel');
+
+      console.log(response);
+      setData(response);
+    })();
+  }, []);
+
   return (
     <Swiper
       spaceBetween={30}
@@ -26,18 +37,11 @@ export default function App() {
       modules={[EffectFade, Navigation, Pagination]}
       className="mySwiper"
     >
-      <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-      </SwiperSlide>
+      {data.map((slide) => (
+        <SwiperSlide>
+          <img src={slide.url} />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 }
