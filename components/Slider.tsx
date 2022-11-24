@@ -39,7 +39,7 @@ export default function App() {
     >
       {data.map((slide) => (
         <SwiperSlide>
-          <img src={slide.url} />
+          <img src={slide.url} style={{ height: '25rem', objectFit: 'cover' }} />
         </SwiperSlide>
       ))}
     </Swiper>
