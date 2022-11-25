@@ -5,7 +5,12 @@ import Navbar from '../components/Navbar';
 const Bedroom = () => (
   <div>
     <Navbar />
-    <Chambre />
+    <div className="container mt-5">
+    <Chambre /></div>
+    
+    <div>
+
+    </div>
     <Chambre />
     <Chambre />
   </div>
