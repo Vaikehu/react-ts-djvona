@@ -16,7 +16,7 @@ export default function App() {
   const [data, setData] = React.useState([]);
   React.useEffect(() => {
     (async () => {
-      const response = await getDataFromFirebase('bungalow-carrousel');
+      const response = await getDataFromFirebase('chambre-carrousel');
 
       console.log(response);
       setData(response);
