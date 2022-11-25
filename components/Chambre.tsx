@@ -16,7 +16,7 @@ export default function App() {
   const [data, setData] = React.useState([]);
   React.useEffect(() => {
     (async () => {
-      const response = await getDataFromFirebase('chambre-carrousel');
+      const response = await getDataFromFirebase('-carrousel');
 
       console.log(response);
       setData(response);
@@ -37,7 +37,9 @@ export default function App() {
       {data.map((slide) => (
         <SwiperSlide>
           <img
-            src={slide.url}
+            src={
+              'https://firebasestorage.googleapis.com/v0/b/pension-ananas-b5cac.appspot.com/o/hilton-moorea-lagoon.jpg?alt=media&token=3e76c44c-c81b-410b-ab7d-46b451b67e81'
+            }
             style={{ height: '25rem', objectFit: 'cover' }}
           />
         </SwiperSlide>
@@ -52,7 +54,6 @@ export default function App() {
       </SwiperSlide>
       <SwiperSlide>
         <div className="title text-center pd-5 m-5" data-swiper-parallax="-300">
-          {' '}
           BUNGALOW
         </div>
       </SwiperSlide>
