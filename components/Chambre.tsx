@@ -38,7 +38,7 @@ export default function App() {
         <SwiperSlide>
           <img
             src={
-              'https://firebasestorage.googleapis.com/v0/b/pension-ananas-b5cac.appspot.com/o/hilton-moorea-lagoon.jpg?alt=media&token=3e76c44c-c81b-410b-ab7d-46b451b67e81'
+              'https://picsum.photos/id/237/1000/1600.jpg'
             }
             style={{ height: '25rem', objectFit: 'cover' }}
           />
