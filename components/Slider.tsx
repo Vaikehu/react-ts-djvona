@@ -45,3 +45,5 @@ export default function App() {
     </Swiper>
   );
 }
+
+export default Slider;
