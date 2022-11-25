@@ -1,6 +1,4 @@
 import * as React from 'react';
-
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -8,7 +6,6 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
 import '../src/styles.css';
 
 // import required modules
@@ -39,11 +36,12 @@ export default function App() {
     >
       {data.map((slide) => (
         <SwiperSlide>
-          <img src={slide.url} style={{ height: '25rem', objectFit: 'cover' }} />
+          <img
+            src={slide.url}
+            style={{ height: '25rem', objectFit: 'cover' }}
+          />
         </SwiperSlide>
       ))}
     </Swiper>
   );
 }
-
-export default Slider;
