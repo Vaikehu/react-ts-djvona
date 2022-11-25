@@ -37,22 +37,22 @@ const Navbar = () => (
                 <ul className="dropdown-menu">
                   <li className="nav-item">
                     <a className="dropdown-item" className="btn btn-primary btn-lg" href="/bedroom">
-                      Nos Chambres
+                      Chambres
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="dropdown-item" href="#">
+                    <a className="dropdown-item" className=" btn btn-primary btn-lg "href="/Restaurants">
                       Restaurants
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="dropdown-item">Activité</a>
+                    <a className="dropdown-item" className=" btn btn-primary btn-lg" href="/Activite">Activité</a>
                   </li>
                   <li className="nav-item">
-                    <a className="dropdown-item">Service</a>
+                    <a className="dropdown-item"className=" btn btn-primary btn-lg" href="/Service">Service</a>
                   </li>
                   <li className="nav-item">
-                    <a className="dropdown-item">Location</a>
+                    <a className="dropdown-item"className=" btn btn-primary btn-lg" href="/Location">Location</a>
                   </li>
                 </ul>
               </li>

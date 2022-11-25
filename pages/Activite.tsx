@@ -1,8 +1,11 @@
 import * as React from 'react';
+import Navbar from '../components/Navbar';
+import Lactivite from '../components/Lactivite';
 
 const Activite = () => (
   <div>
-    <h2>Activite</h2>
+    <Navbar />
+    <Lactivite/>
   </div>
 );
 

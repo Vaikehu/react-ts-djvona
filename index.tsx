@@ -22,11 +22,11 @@ const root = createRoot(rootElement);
 
 const router = createBrowserRouter([
   { path: '/', element: <App /> },
-  { path: '/Bedroom', elment: <Bedroom /> },
-  { path: '/Restaurants', element: <Restaurants /> },
-  { path: '/Activite', element: <Activite /> },
-  { path: '/Service', element: <Service /> },
-  { path: '/Location', element: <Location /> },
+  { path: 'bedroom', element: <Bedroom /> },
+  { path: '/restaurants', element: <Restaurants /> },
+  { path: '/activite', element: <Activite /> },
+  { path: '/service', element: <Service /> },
+  { path: '/location', element: <Location /> },
 ]);
 
 root.render(

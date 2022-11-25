@@ -1,8 +1,11 @@
 import * as React from 'react';
+import Chambre from '../components/Chambre';
+import Navbar from '../components/Navbar';
 
 const Bedroom = () => (
   <div>
-    <h2>Bedroom</h2>
+    <Navbar />
+    <Chambre />
   </div>
 );
 

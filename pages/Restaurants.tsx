@@ -1,8 +1,11 @@
 import * as React from 'react';
+import Repas from '../components/Repas';
+import Navbar from '../components/Navbar';
 
 const Restaurants = () => (
   <div>
-    <h2>Restaurants</h2>
+    <Navbar/>
+    <Repas/>
   </div>
 );
 
