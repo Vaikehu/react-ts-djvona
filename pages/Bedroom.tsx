@@ -6,6 +6,8 @@ const Bedroom = () => (
   <div>
     <Navbar />
     <Chambre />
+    <Chambre />
+    <Chambre />
   </div>
 );
 

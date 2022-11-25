@@ -6,6 +6,8 @@ const Location = () => (
   <div>
     <Navbar/>
     <Vehicule/>
+    <Vehicule/>
+    <Vehicule/>
   </div>
 );
 

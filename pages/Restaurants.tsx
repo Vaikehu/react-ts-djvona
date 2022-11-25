@@ -6,6 +6,8 @@ const Restaurants = () => (
   <div>
     <Navbar/>
     <Repas/>
+    <Repas/>
+    <Repas/>
   </div>
 );
 

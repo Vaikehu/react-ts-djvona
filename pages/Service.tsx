@@ -6,6 +6,8 @@ const Service = () => (
   <div>
     <Navbar/>
     <Evennement/>
+    <Evennement/>
+    <Evennement/>
   </div>
 );
 

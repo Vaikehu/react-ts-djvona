@@ -6,6 +6,8 @@ const Activite = () => (
   <div>
     <Navbar />
     <Lactivite/>
+    <Lactivite/>
+    <Lactivite/>
   </div>
 );
 
