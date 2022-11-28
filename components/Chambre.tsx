@@ -53,9 +53,7 @@ export default function App() {
         />
       </SwiperSlide>
       <SwiperSlide>
-        <div className="title text-center pd-5 m-5" data-swiper-parallax="-300">
-          BUNGALOW
-        </div>
+        <div></div>
       </SwiperSlide>
     </Swiper>
   );
