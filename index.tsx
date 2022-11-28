@@ -16,6 +16,7 @@ import Activite from './pages/Activite';
 import Service from './pages/Service';
 import Location from './pages/Location';
 import Slider from './components/Slider';
+import Footer from './components/Footer';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -32,5 +33,6 @@ const router = createBrowserRouter([
 root.render(
   <StrictMode>
     <RouterProvider router={router} />
+    <Footer />
   </StrictMode>
 );
