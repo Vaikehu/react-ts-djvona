@@ -3,9 +3,9 @@ import * as React from 'react';
 export default function Footer() {
   return (
     <div>
-      <footer className="text-muted py-5">
+      <footer className="text-muted py-5 bg-dark">
         <div className="container">
-          <p className="float-end mb-1">
+          <p className="float-end mb-1 bg-wihte">
             <a href="#">Back to top</a>
           </p>
           <p className="mb-1">
