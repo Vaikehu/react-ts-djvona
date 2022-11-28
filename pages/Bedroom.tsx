@@ -13,6 +13,7 @@ const Bedroom = () => (
     <div className="text-center">Chambres Simple</div>
     <Chambre />
   </div>
+  
 );
 
 export default Bedroom;

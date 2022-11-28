@@ -16,7 +16,7 @@ export default function App() {
   const [data, setData] = React.useState([]);
   React.useEffect(() => {
     (async () => {
-      const response = await getDataFromFirebase('-carrousel');
+      const response = await getDataFromFirebase('chambre-carrousel');
 
       console.log(response);
       setData(response);
@@ -37,21 +37,11 @@ export default function App() {
       {data.map((slide) => (
         <SwiperSlide>
           <img
-            src={
-              'https://picsum.photos/id/237/1000/1600.jpg'
-            }
+            src={"https://images7.alphacoders.com/347/thumb-1920-347099.jpg"}
             style={{ height: '25rem', objectFit: 'cover' }}
           />
         </SwiperSlide>
       ))}
-      <SwiperSlide>
-        <img
-          src={
-            'https://firebasestorage.googleapis.com/v0/b/pension-ananas-b5cac.appspot.com/o/285626283.jpg?alt=media&token=16c06598-e282-4c3c-bd96-bf0cdc8744f6'
-          }
-          style={{ height: '25rem', objectFit: 'cover' }}
-        />
-      </SwiperSlide>
       <SwiperSlide>
         <div></div>
       </SwiperSlide>
