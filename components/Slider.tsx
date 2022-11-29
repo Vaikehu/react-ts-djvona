@@ -40,6 +40,28 @@ export default function App() {
             src={slide.url}
             style={{ height: '25rem', objectFit: 'cover' }}
           />
+          {/* 
+          <figcaption>
+            <div className="m-5 title text-center" data-swiper-parallax="-300">
+              La Pension Ananas
+            </div>
+            <div className="text" data-swiper-parallax="-100">
+              <p className="text-center">
+                IA ORANA! BIENVENUE CHEZ "FARE VAI".
+              </p>
+            </div>
+
+            <div className="d-grid gap-2 col-6 mx-auto">
+              <button
+                className="btn btn-outline-primary btn-lg m-5"
+                type="button"
+                href="/Bedroom"
+              >
+                "FARE VAI"
+              </button>
+            </div>
+          </figcaption>
+          */}
         </SwiperSlide>
       ))}
     </Swiper>
