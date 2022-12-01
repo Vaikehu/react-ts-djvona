@@ -46,7 +46,7 @@ export default function App() {
                 <div className="row g-0">
                   <div className="col-md-4">
                     <img
-                      src="..."
+                      src="https://cdn.discordapp.com/attachments/1044737054162047016/1047670715849113621/16698539944694779303275300176666.jpg"
                       className="img-fluid rounded-start"
                       alt="..."
                     />
