@@ -63,6 +63,7 @@ export default function App() {
           </figcaption>
           */}
         </SwiperSlide>
+        
       ))}
     </Swiper>
   );
