@@ -74,14 +74,14 @@ export default function App() {
                 <div className="row g-0">
                   <div className="col-md-4">
                     <img
-                      src="..."
+                      src="https://etahititravel.com/wp-content/uploads/2017/01/sejours-plongees-tahiti-moorea-e-tahiti-travel.jpg-1.jpg"
                       className="img-fluid rounded-start"
                       alt="..."
                     />
                   </div>
                   <div className="col-md-8">
                     <div className="card-body">
-                      <h5 className="card-title">Evennement</h5>
+                      <h5 className="card-title">Réservation</h5>
                       <p className="card-text">
                         This is a wider card with supporting text below as a
                         natural lead-in to additional content. This content is a
@@ -93,6 +93,20 @@ export default function App() {
                         </small>
                       </p>
                     </div>
+                  </div>
+                  <div className="card text-center">
+                    <div className="card-col-mb-3">Featured</div>
+                    <div className="card-body">
+                      <h5 className="card-title">Special title treatment</h5>
+                      <p className="card-text">
+                        With supporting text below as a natural lead-in to
+                        additional content.
+                      </p>
+                      <a href="#" className="btn btn-primary">
+                        Go somewhere
+                      </a>
+                    </div>
+                    <div className="card-footer text-muted">2 days ago</div>
                   </div>
                 </div>
               </div>
