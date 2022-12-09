@@ -10,6 +10,7 @@ const Bedroom = () => (
       <div className="Chambre  fw-light m-5"></div>
     </div>
   </div>
+  
 
 );
 
