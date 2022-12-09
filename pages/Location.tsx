@@ -15,7 +15,7 @@ const Location = () => (
 
 <h3 className="page text-center">Nos Locations</h3>
 
-<hr/>
+<hr/> 
 
 <hr/>
 

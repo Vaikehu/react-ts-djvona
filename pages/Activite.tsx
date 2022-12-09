@@ -8,6 +8,7 @@ const Activite = () => (
     <br/>
     <div className="text-center m-5">
       Toutes nos Activités
+      
     </div>
     <Lactivite />
   </div>

@@ -5,15 +5,12 @@ import Navbar from '../components/Navbar';
 const Bedroom = () => (
   <div>
     <Navbar />
-    <div className="text-center">Nos Chambres en pillotis
-      <Chambre collectionTarget="room-carroicel"/>
+    <div className="container mt-5">
+      <Chambre collectionTarget="Chambre-carroicel"/>
+      <div className="Chambre  fw-light m-5"></div>
     </div>
-    <div className="text-center">Chambres Double</div>
-    <Chambre />
-    <div className="text-center">Chambres Simple</div>
-    <Chambre />
   </div>
-  
+
 );
 
 export default Bedroom;

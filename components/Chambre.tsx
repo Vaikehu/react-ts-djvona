@@ -32,12 +32,13 @@ export default function App() {
         clickable: true,
       }}
       pagination={true}
+
       modules={[EffectFade, Navigation, Pagination]}
     >
       {data.map((slide) => (
         <SwiperSlide>
           <img
-            src={"https://images7.alphacoders.com/347/thumb-1920-347099.jpg"}
+            src={slide.url}
             style={{ height: '25rem', objectFit: 'cover' }}
           />
         </SwiperSlide>
