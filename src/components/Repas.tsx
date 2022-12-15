@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import '../src/styles.css';
+import '../styles.css';
 
 // import required modules
 import { EffectFade, Navigation, Pagination } from 'swiper';
@@ -16,17 +16,17 @@ export default function App() {
   const [data, setData] = React.useState([]);
   React.useEffect(() => {
     (async () => {
-      const response = await getDataFromFirebase('lactivite-carrousel');
+      const response = await getDataFromFirebase('repas-carrousel');
 
       console.log(response);
-      setData(response);
+      setData(response as never);
     })();
   }, []);
 
   return (
     <div className="container">
       <div className="row row-cols-1 row-cols-md-2 g-4">
-        {data.map((slide) => (
+        {data.map((slide: any) => (
           <div className="col">
             <div className="card">
               <img src={slide.url} className="card-img-top" alt="..." />

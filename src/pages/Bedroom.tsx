@@ -3,10 +3,10 @@ import Chambre from '../components/Chambre';
 import Navbar from '../components/Navbar';
 
 const Bedroom = () => (
-  <div>
+  <div className="container-fluidss">
     <Navbar />
     <div className="container mt-5">
-      <Chambre collectionTarget="Chambre-carroicel"/>
+      <Chambre />   
       <div className="Chambre  fw-light m-5"></div>
     </div>
   </div>

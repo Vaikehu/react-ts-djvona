@@ -7,6 +7,7 @@ const Service = () => (
     <Navbar/>
     <br/>
     <Evennement/>
+    <div className="evennement mb-3 fw-light"></div>
     <div className="text-center"><h1>Wedding</h1>
     les tarifs varie suivant la demande.
     <hr/>

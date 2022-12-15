@@ -23,7 +23,7 @@ const Location = () => (
 
 <div className="container mt-5">
 
-<Vehicule collectionTarget="location-carrousel" />
+<Vehicule />
 
 <div className="location mb-3 fw-light">
 
@@ -55,7 +55,7 @@ Le nettoyage et le plein de la voiture doit être fait avant le retour, dans le 
 
 <h3 className="text-center">Nos Scooters</h3>
 
-<Vehicule collectionTarget="scooter-carrousel" />
+<Vehicule />
 
 <div className="location ">
 
@@ -83,7 +83,7 @@ Le nettoyage et le plein de la voiture doit être fait avant le retour, dans le 
 
 <h3 className="text-center"> Nos Vélos</h3>
 
-<Vehicule collectionTarget="velo-carrousel" />
+<Vehicule />
 
 <div className="location ">
 

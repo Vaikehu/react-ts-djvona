@@ -18,12 +18,12 @@ import Location from './pages/Location';
 import Slider from './components/Slider';
 import Footer from './components/Footer';
 
-const rootElement = document.getElementById('root');
+const rootElement = document.getElementById('root') as HTMLElement;
 const root = createRoot(rootElement);
 
 const router = createBrowserRouter([
   { path: '/', element: <App /> },
-  { path: 'bedroom', element: <Bedroom /> },
+  { path: '/bedroom', element: <Bedroom /> },
   { path: '/restaurants', element: <Restaurants /> },
   { path: '/activite', element: <Activite /> },
   { path: '/service', element: <Service /> },

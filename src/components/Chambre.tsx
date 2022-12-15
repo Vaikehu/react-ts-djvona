@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import '../src/styles.css';
+import '../styles.css';
 
 // import required modules
 import { EffectFade, Navigation, Pagination } from 'swiper';
@@ -16,10 +16,10 @@ export default function App() {
   const [data, setData] = React.useState([]);
   React.useEffect(() => {
     (async () => {
-      const response = await getDataFromFirebase('header-carrousel');
+      const response = await getDataFromFirebase('chambre-carrousel');
 
       console.log(response);
-      setData(response);
+      setData(response as never[]);
     })();
   }, []);
 
@@ -31,20 +31,18 @@ export default function App() {
       pagination={{
         clickable: true,
       }}
-      pagination={true}
+      //pagination={true}
+
       modules={[EffectFade, Navigation, Pagination]}
     >
-      {data.map((slide) => (
+      {data.map((slide: any) => (
         <SwiperSlide>
           <img
             src={slide.url}
-            style={{ height: '25rem', objectFit: 'cover' }}
+            style={{ height: '45rem', objectFit: 'cover', objectPosition:'center', width:'100%'}}
           />
         </SwiperSlide>
       ))}
     </Swiper>
   );
 }
-
-
-

@@ -6,7 +6,7 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import '../src/styles.css';
+import '../styles.css';
 
 // import required modules
 import { EffectFade, Navigation, Pagination } from 'swiper';
@@ -19,7 +19,7 @@ export default function App() {
       const response = await getDataFromFirebase('header-carrousel');
 
       console.log(response);
-      setData(response);
+      setData(response as never);
     })();
   }, []);
 
@@ -34,34 +34,12 @@ export default function App() {
       modules={[EffectFade, Navigation, Pagination]}
       className="mySwiper"
     >
-      {data.map((slide) => (
+      {data.map((slide: any) => (
         <SwiperSlide>
           <img
             src={slide.url}
-            style={{ height: '25rem', objectFit: 'cover' }}
+            style={{ height: '49rem', objectFit: 'cover', objectPosition:'center', width:'100%'}}
           />
-          {/* 
-          <figcaption>
-            <div className="m-5 title text-center" data-swiper-parallax="-300">
-              La Pension Ananas
-            </div>
-            <div className="text" data-swiper-parallax="-100">
-              <p className="text-center">
-                IA ORANA! BIENVENUE CHEZ "FARE VAI".
-              </p>
-            </div>
-
-            <div className="d-grid gap-2 col-6 mx-auto">
-              <button
-                className="btn btn-outline-primary btn-lg m-5"
-                type="button"
-                href="/Bedroom"
-              >
-                "FARE VAI"
-              </button>
-            </div>
-          </figcaption>
-          */}
         </SwiperSlide>
         
       ))}
