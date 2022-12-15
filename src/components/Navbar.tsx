@@ -29,7 +29,7 @@ const Navbar = () => (
         <ul className="navbar-nav fs-4 ">
           <li className="nav-item">
             <a className="nav-link active" aria-current="page" href="/">
-              Accueil
+              Accueil XXX
             </a>
           </li>
           <li className="nav-item">
